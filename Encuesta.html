@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Virtual Registrations</title>
+    <link rel="stylesheet" href="main.css">
+    <!-- Aquí va la configuración del botón enviar-->
+    <style>
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      input[type="text"],
+      textarea {
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+      }
+      input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="succeced.html" method="get">
+       <!-- El div class= "contenedor" sirve para tener la barra lateral-->
+      <div class="contenedor">
+   <!-- Aquí va el botón de varias selecciones-->
+         <div class="linea">
+          <label for="opciones">Selecciona una Actividad Vespertina:</label>
+         </div>
+<select id="opciones" name="opciones">
+  <option value="opcion1" selected disabled>Elije una opción</option>
+  <optgroup label="Deportes">
+  <option value="opcion2">Fútbol</option>
+  <option value="opción3">Básketbol</option>
+  <option value="opcion4">Voleibol</option>
+  <option value="opcion5">Natación</option>
+  <option value="opcion6">Atletismo</option>
+</optgroup>
+<optgroup label="Instrumentos">
+  <option value="opcion7">Piano (C$400 por mes)</option>
+  <option value="opcion8">Guitarra (C$400 por mes)</option>
+  <option value="opcion9">Violín (C$400 por mes)</option>
+</optgroup>
+<optgroup label="Otros Talleres">
+  <option value="opcion9">Pintura y dibujo (C$400 por mes)</option>
+  <option value="opcion10">Canto Solista (C$400 por mes)</option>
+  <option value="opcion11">Ajedrez</option>
+  <option value="opcion11">Teatro Secundaria</option>
+  <option value="opcion11">Coro</option>
+  <option value="opcion11">Danza folclórica secundaria</option>
+</optgroup>
+</select>
+<div class="espacio-invisible2"></div>
+<!-- Aquí va lo de las opciones-->
+      <!-- Aquí va lo de las opciones-->
+<fieldset>
+  <legend>¿Por qué ha elegido esta actividad vespertina?:</legend>
+  <div class="container">
+    <form>
+      <label>
+        <input type="radio" name="radio" checked="">
+        <span>Opción #1:Decidí elegir esta actividad vespertina porque me llamó la atención y tengo curiosidad por probarla. Quiero explorar y descubrir si es algo que realmente me gusta y me brinda satisfacción.</span>
+      </label>
+      <label>
+        <input type="radio" name="radio">
+        <span>Opción #2:Me decidí por esta actividad vespertina porque me ayuda a cultivar y desarrollar habilidades y talentos que considero importantes para mi crecimiento personal. Además, me motiva a seguir aprendiendo y mejorando en un área que me apasiona y que me brinda una sensación de logro y satisfacción </span>
+      </label>
+      <label>
+        <input type="radio" name="radio">
+        <span>Opción #3:Mis padres me obligaron a elegir esta actividad vespertina</span>
+      </label>
+      <label>
+        <input type="radio" name="radio">
+        <span>Opción #4: Otro</span>
+        <div class="texto-desplegable">
+          <textarea placeholder="Escribe aquí..."></textarea>
+          </label>
+        </div>
+  </form>
+      </fieldset>
+      <div class="espacio-invisible3"></div>
+
+<!-- Aquí va lo de las opciones parte dos-->
+      <fieldset>
+        <legend>¿Tienes experiencia con la actividad vespertina que elegistes?:</legend>
+      <div class="container">
+  <form>
+    <label>
+       <input type="radio" name="radio" checked="">
+      <span>Opción #1:Sí, tengo experiencia previa con esta actividad elegida</span>
+    </label>
+    <label>
+      <input type="radio" name="radio">
+      <span>Opción #2: No, no tengo experiencia previa con esta actividad, por lo que necesito mucha ayuda por parte del maestro</span>
+    </label>
+    <label>
+      <input type="radio" name="radio">
+      <span>Opción #3: Más o menos, tengo experiencia previa, pero aún requiero de mucha práctica y aprendizaje</span>
+    </label>
+    <label>
+      <input type="radio" name="radio">
+      <span>Opción #4: Otro</span>
+      <div class="texto-desplegable">
+          <textarea placeholder="Escribe aquí..."></textarea>
+      </label>
+  </form>
+</div>
+      </fieldset>
+      <div class="espacio-invisible3"></div>
+<!-- Aquí va lo de las opciones parte tres-->
+      <fieldset>
+        <legend>¿Qué nivel de compromiso estás dispuesto/a a asumir para esta actividad vespertina?:</legend>
+      <div class="container">
+  <form>
+    <label>
+       <input type="radio" name="radio" checked="">
+      <span>Opción #1: Alto compromiso: estoy dispuesto/a a dedicar tiempo y esfuerzo significativos</span>
+    </label>
+    <label>
+      <input type="radio" name="radio">
+      <span>Opción #2: Compromiso moderado: puedo dedicar tiempo regularmente pero con algunas limitaciones</span>
+    </label>
+    <label>
+      <input type="radio" name="radio">
+      <span>Opción #3: Compromiso bajo: puedo participar ocasionalmente o con restricciones de horario</span>
+    </label>
+      </fieldset>
+       <div class="espacio-invisible3"></div>
+<!-- Aquí va lo de las opciones parte cuatro-->
+        <fieldset>
+        <legend>¿Tienes alguna restricción médica o física que pueda afectar tu participación en la actividad vespertina?:</legend>
+      <div class="container">
+  <form>
+    <label>
+       <input type="radio" name="radio" checked="">
+      <span>Sí, tengo restricciones médicas o físicas.</span>
+    </label>
+    <label>
+      <input type="radio" name="radio">
+      <span> No, no tengo restricciones médicas o físicas, por lo que no tendré problemas con esta actividad</span>
+    </label>
+  </form>
+      </fieldset>
+      <div class="espacio-invisible3"></div>
+<!-- Aquí va lo de las opciones parte cinco-->   
+ <fieldset>
+        <legend>¿Qué tipo de apoyo o recursos esperas recibir por parte del colegio para esta actividad vespertina?
+</legend>
+      <div class="container">
+  <form>
+    <label>
+       <input type="radio" name="radio" checked="">
+      <span>Opción #1: Acceso a equipos o materiales especializados</span>
+    </label>
+    <label>
+      <input type="radio" name="radio">
+      <span>Opción #2: Asesoramiento o tutoría adicional</span>
+    </label>
+    <label>
+      <input type="radio" name="radio">
+      <span>Opción #3: Espacio físico dedicado para la práctica de la actividad</span>
+    </label>
+    <label>
+      <input type="radio" name="radio">
+      <span>Opción #4: Financiamiento o ayuda para costos relacionados</span>
+    </label>
+    <label>
+      <input type="radio" name="radio">
+      <span>Opción #5:No espero ningún tipo apoyo o recursos por parte del colegio</span>
+    </label>
+    <label>
+      <input type="radio" name="radio">
+      <span>Opción #6: Otro tipo de apoyo</span>
+      <div class="texto-desplegable">
+          <textarea placeholder="Escribe aquí..."></textarea>
+      </label>
+  </form>
+</div>
+</fieldset>
+<div class="espacio-invisible3"></div>
+<!-- Aquí va lo de las opciones parte seis-->   
+ <fieldset>
+        <legend>¿Qué expectativas tienes sobre los beneficios que obtendrás al participar en esta actividad vespertina?:</legend>
+      <div class="container">
+  <form>
+    <label>
+       <input type="radio" name="radio" checked="">
+      <span>Opción #1: Desarrollo de habilidades específicas.</span>
+    </label>
+    <label>
+      <input type="radio" name="radio">
+      <span>Opción #2:  Conocer nuevas personas y hacer amigos.</span>
+    </label>
+    <label>
+      <input type="radio" name="radio">
+      <span>Opción #3: Mejorar mi currículum o perfil académico.</span>
+    </label>
+    <label>
+      <input type="radio" name="radio">
+      <span>Opción #4: Otras expectativas</span>
+      <div class="texto-desplegable">
+          <textarea placeholder="Escribe aquí..."></textarea>
+      </label>
+  </form>
+</div>
+      </fieldset>
+            <div class="espacio-invisible5"></div>
+      <input type="submit" value="Enviar">
+      <div class="espacio-invisible"></div>
+    </form>
+  </body>
+</html>
+<!-- El fin de div es igual al final de lo que se mostrará en la barra lateral-->
+</div>
